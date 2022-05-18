@@ -1,10 +1,10 @@
 ## Qu'est-ce que DockerFile ?
 
-Docker est une plateforme de conteneurs lancée en 2013. Il facilite la création de conteneurs et d'applications basées sur celles-ci. Il en existe d'autres, mais celui-ci est le plus utilisé. Il est également plus facile à déployer et à utiliser que la concurrence. 
+<p style ="text-align:justify;"> Docker est une plateforme de conteneurs lancée en 2013. Il facilite la création de conteneurs et d'applications basées sur celles-ci. Il en existe d'autres, mais celui-ci est le plus utilisé. Il est également plus facile à déployer et à utiliser que la concurrence. 
 
 C'est une solution open source, sécurisée et économique. De nombreuses personnes et entreprises ont contribué au développement de ce projet. Cette immense communauté a développé un immense écosystème de produits, services et ressources. 
 
-Conçu à l'origine pour Linux, Docker permet également aux conteneurs de s'exécuter sur Windows ou Mac en raison de la "couche" de virtualisation Linux entre le système d'exploitation Windows/macOS et l'environnement d'exécution Docker. Par conséquent, il est possible d'exécuter des conteneurs Windows natifs dans un environnement de conteneur Windows ou Linux.
+Conçu à l'origine pour Linux, Docker permet également aux conteneurs de s'exécuter sur Windows ou Mac en raison de la "couche" de virtualisation Linux entre le système d'exploitation Windows/macOS et l'environnement d'exécution Docker. Par conséquent, il est possible d'exécuter des conteneurs Windows natifs dans un environnement de conteneur Windows ou Linux. </p>
 
 ## Qu'est-ce qu'un conteneur ?
 
@@ -33,7 +33,7 @@ Chaque conteneur Docker débute avec un ”Dockerfile“. Il s’agit d’un fic
 Un Dockerfile précise le système d’exploitation sur lequel sera basé le conteneur, et les langages, variables environnementales, emplacements de fichiers, ports réseaux et autres composants requis.
 
 Pour importer d'un fichier DockerFile à un fichier DockerImage, il suffit de taper la ligne de code suivante : <br>
-<code> $ docker build <img> </code> <br>
+<code> $ docker build <img> </code> <br> <br>
 Cela va créer un conteneur à partir d une image. Si nous n avons pas l image localement, elle est téléchargé automatiquement  
 
 <img 
