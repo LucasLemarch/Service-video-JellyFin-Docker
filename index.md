@@ -76,3 +76,7 @@ $ docker exec -it <id> bash // Ouvrir un terminal interactive (-it) dans le cont
 $ docker exec <id> ls // Exécute la commande ls sur le conteneur pour afficher ses fichiers
 $ docker cp <id>:<fichier> . // Copie le fichier <fichier> du conteneur dans notre système de fichiers <local>
 ```
+
+```
+dqdfqd
+```
