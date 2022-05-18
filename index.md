@@ -16,6 +16,15 @@ Celles-ci permettent de séparer les applications entre elles sur un même syst�
 
 Contrairement à une machine virtuelle de plusieurs Go, un conteneur est plus simple, il peut donc s'arrêter et démarrer plus rapidement et délivre uniquement les ressources nécessaires à une application. En effet, le conteneur partage le kernel de son OS avec d’autres conteneurs. C’est une différence avec une machine virtuelle, utilisant un hyperviseur pour distribuer les ressources hardware.
 
+<img 
+    style="display: block; 
+           margin-left: auto;
+           margin-right: auto;
+           width: 80%;"
+    src="./img/Image1.PNG" 
+    alt="Image" />
+
+
 
 ## Comment fonctionne DockerFile ? 
 
@@ -29,6 +38,8 @@ Une image Docker est un modèle en lecture seule, qui est utilisée pour créer 
 conteneurs Docker (vu ci-dessus). Cette image est composée de plusieurs couches empaquetant
 toutes les installations/dépendances/bibliothèques/processus/code d'application qui sont
 nécéssaires pour un environnement de conteneur pleinement opérationnel.
+
+### Quelques commandes pour 
 
 
 - Bulleted
