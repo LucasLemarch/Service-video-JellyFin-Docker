@@ -59,18 +59,6 @@
     src="./img/Image4.png" 
     alt="Image" />
 
-## Quelques commandes utiles pour bien manipuler Docker
-
-```shell
-$ docker info
-$ docker version
-$ docker run <image> //Créer un conteneur à partir d une image. Si nous n avons pas l image localement, elle télécharge automatiquement
-$ docker run -d -p 82:80 nginx // Créer un conteneur en mode détaché accessible depuis le port 82
-$ docker stop|start <id> // Arrêter|Lancer un conteneur
-$ docker ps -a // Liste des conteneurs (-a affiche également les conteneurs arrêtés)
-$ docker ps -q // Liste des identifiants de conteneur
-```
-
 ## Qu'avons-nous produit dans cette SAE ? 
 
 
