@@ -30,14 +30,18 @@ Contrairement à une machine virtuelle de plusieurs Go, un conteneur est plus si
 
 Chaque conteneur Docker débute avec un ”Dockerfile“. Il s’agit d’un fichier texte rédigé dans une syntaxe compréhensible, comportant les instructions de création d’une image Docker.
 
-Un Dockerfile précise le système d’exploitation sur lequel sera basé le conteneur, et les langages, variables environnementales, emplacements de fichiers, ports réseaux et autres composants requis
+Un Dockerfile précise le système d’exploitation sur lequel sera basé le conteneur, et les langages, variables environnementales, emplacements de fichiers, ports réseaux et autres composants requis.
+
+Pour importer d'un fichier DockerFile à un fichier DockerImage, il suffit de taper la ligne de code suivante :
+<code> $ docker build <img> </code>
+Cela va créer un conteneur à partir d une image. Si nous n avons pas l image localement, elle est téléchargé automatiquement  
 
 <img 
     style="display: block; 
            margin-left: auto;
            margin-right: auto;
            width: 80%;"
-    src="./img/Image2.png" 
+    src="./img/Image3.png" 
     alt="Image" />
 
 ## Les images Docker
