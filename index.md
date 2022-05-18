@@ -25,6 +25,11 @@ Un Dockerfile précise le système d’exploitation sur lequel sera basé le con
 
 ## Les images Docker
 
+Une image Docker est un modèle en lecture seule, qui est utilisée pour créer des
+conteneurs Docker (vu ci-dessus). Cette image est composée de plusieurs couches empaquetant
+toutes les installations/dépendances/bibliothèques/processus/code d'application qui sont
+nécéssaires pour un environnement de conteneur pleinement opérationnel.
+
 
 - Bulleted
 - List
