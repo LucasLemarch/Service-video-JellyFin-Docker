@@ -1,5 +1,3 @@
-<title> SAE - Installation d'un service réseau </title>
-
 ## Qu'est-ce que DockerFile ?
 
 <p style ="text-align:justify;"> Docker est une plateforme de conteneurs lancée en 2013. Il facilite la création de conteneurs et d'applications basées sur celles-ci. Il en existe d'autres, mais celui-ci est le plus utilisé. Il est également plus facile à déployer et à utiliser que la concurrence. <br>
@@ -8,13 +6,12 @@ Conçu à l'origine pour Linux, Docker permet également aux conteneurs de s'ex�
 
 ## Qu'est-ce qu'un conteneur ?
 
-<p style ="text-align:justify;"> Un conteneur est un environnement d’exécution léger, et d’une alternative aux méthodes de virtualisation traditionnelles basées sur les machines virtuelles. <br>
+Un conteneur est un environnement d’exécution léger, et d’une alternative aux méthodes de virtualisation traditionnelles basées sur les machines virtuelles. <br>
 
 Pour exécuter les applications, il est toutefois nécessaire d’exploiter des packages, des bibliothèques et divers composants logiciels. Pour exploiter ces ressources tout en isolant une application, on utilise depuis longtemps les machines virtuelles. <br>
 
 Celles-ci permettent de séparer les applications entre elles sur un même système, et de réduire les conflits entre les composants logiciels et la compétition pour les ressources. Cependant, une alternative a vu le jour : les conteneurs. <br>
-
-Contrairement à une machine virtuelle de plusieurs Go, un conteneur est plus simple, il peut donc s'arrêter et démarrer plus rapidement et délivre uniquement les ressources nécessaires à une application. En effet, le conteneur partage le kernel de son OS avec d’autres conteneurs. C’est une différence avec une machine virtuelle, utilisant un hyperviseur pour distribuer les ressources hardware. </p>
+Contrairement à une machine virtuelle de plusieurs Go, un conteneur est plus simple, il peut donc s'arrêter et démarrer plus rapidement et délivre uniquement les ressources nécessaires à une application. En effet, le conteneur partage le kernel de son OS avec d’autres conteneurs. C’est une différence avec une machine virtuelle, utilisant un hyperviseur pour distribuer les ressources hardware.
 
 <img 
     style="display: block; 
