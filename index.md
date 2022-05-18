@@ -47,6 +47,18 @@
 
 ## Les images Docker
 
-<p style ="text-align:justify;"> Une image Docker est un modèle en lecture seule, qui est utilisée pour créer des conteneurs Docker. Cette image est composée de plusieurs couches empaquetant toutes les installations/dépendances/bibliothèques/processus/code d'application qui sont necéssaires pour un environnement de conteneur pleinement opérationnel. </p>
+<p style ="text-align:justify;"> Une image Docker est un modèle en lecture seule, qui est utilisée pour créer des conteneurs Docker. Cette image est composée de plusieurs couches empaquetant toutes les installations/dépendances/bibliothèques/processus/code d'application qui sont necéssaires pour un environnement de conteneur pleinement opérationnel. Voici la commande necéssaire pour déployer une image vers un conteneur : </p> <br>
+
+<code> $ docker run <img> </code> <br> <br>
+
+<img 
+    style="display: block; 
+           margin-left: auto;
+           margin-right: auto;
+           width: 80%;"
+    src="./img/Image4.png" 
+    alt="Image" />
 
 ## Quelques commandes utiles pour créer des fichiers
+
+<code> 
