@@ -61,17 +61,18 @@
 
 ## Quelques commandes utiles pour bien manipuler Docker
 
-<code>	$ docker info		 // Donne des information sur votre Docker </code>
-<code>	$ docker version	 // Donne la version du Docker </code>
-<code>	$ docker run 'image' // Créer un conteneur à partir d une image. Si nous n avons pas d'image localement 				elle est téléchargé automatiquement. </code>
-<code>	$ docker run -d -p 82:80 nginx // Créer un conteneur en mode détaché accessible depuis le port 82 </code>
-<code>	$ docker stop|start <id> // Arrêter|Lancer un conteneur </code>
-<code>	$ docker ps -a			// Liste des conteneurs (-a affiche également les conteneurs arrêtés) </code>
-<code>	$ docker ps -q		   // Liste des identifiants de conteneur </code>
-<code>	$ docker stop $(docker ps -q) // Cela arrête tous les conteneurs renvoyés par la sous-commande `docker ps -q` </code>
-<code>	$ docker rm <id> // Supprimer un conteneur s il est arrêté </code>
-<code>	$ docker rm -f 'id' // Forcer la suppression d un conteneur même s il n est pas arrêté </code>
-<code>	$ docker exec -it <id> bash // Ouvrir un terminal interactive (-it) dans le conteneur </code>
-<code>	$ docker exec 'id' ls // Cela exécute la commande ls sur le conteneur pour afficher ses fichiers </code>
-<code>	$ docker cp 'id':<fichier> . // Cela copie le fichier <fichier> du conteneur dans notre système de fichiers 	local </code>
-
+```shell
+$ docker info
+$ docker version
+$ docker run <image> // on crée un conteneur à partir d une image. Si nous n avons pas l image localement, elle est téléchargé automatiquement
+$ docker run -d -p 82:80 nginx // Créer un conteneur en mode détaché accessible depuis le port 82
+$ docker stop|start <id> // Arrêter|Lancer un conteneur
+$ docker ps -a // Liste des conteneurs (-a affiche également les conteneurs arrêtés)
+$ docker ps -q // Liste des identifiants de conteneur
+$ docker stop $(docker ps -q) // Cela arrête tous les conteneurs renvoyés par la sous-commande `docker ps -q`
+$ docker rm <id> // Supprimer un conteneur s il est arrêté
+$ docker rm -f <id> // Forcer la suppression d un conteneur même s il n est pas arrêté
+$ docker exec -it <id> bash // Ouvrir un terminal interactive (-it) dans le conteneur
+$ docker exec <id> ls // Cela exécute la commande ls sur le conteneur pour afficher ses fichiers
+$ docker cp <id>:<fichier> . // Cela copie le fichier <fichier> du conteneur dans notre système de fichiers local
+```
