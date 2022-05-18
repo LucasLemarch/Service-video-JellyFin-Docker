@@ -7,7 +7,26 @@ C’est une solution open source, sécurisée et économique. De nombreux indivi
 Initialement conçue pour Linux, Docker permet aussi d’exécuter des conteneurs sur Windows ou Mac grâce à une ” layer ” de virtualisation Linux entre l’OS Windows / macOS et l’environnement runtime Docker. Il est donc possible d’exécuter des conteneurs Windows natifs sur des environnements de conteneurs Windows ou Linux.
 
 
-### Markdown
+## Qu'est-ce qu'un conteneur ?
+
+Avant de découvrir Docker, vous devez comprendre ce qu’est un conteneur. Il s’agit d’un environnement d’exécution léger, et d’une alternative aux méthodes de virtualisation traditionnelles basées sur les machines virtuelles.
+
+L’une des pratiques clés du développement de logiciel moderne est d’isoler les applications déployées sur un même hôte ou sur un même cluster. Ceci permet d’éviter qu’elles interfèrent.
+
+Pour exécuter les applications, il est toutefois nécessaire d’exploiter des packages, des bibliothèques et divers composants logiciels. Pour exploiter ces ressources tout en isolant une application, on utilise depuis longtemps les machines virtuelles.
+
+Celles-ci permettent de séparer les applications entre elles sur un même système, et de réduire les conflits entre les composants logiciels et la compétition pour les ressources. Cependant, une alternative a vu le jour : les conteneurs.
+
+Une machine virtuelle s’apparente à un système d’exploitation complet, d’une taille de plusieurs gigaoctets, permettant le partitionnement des ressources d’une infrastructure. Un conteneur délivre uniquement les ressources nécessaires à une application.
+
+En effet, le conteneur partage le kernel de son OS avec d’autres conteneurs. C’est une différence avec une machine virtuelle, utilisant un hyperviseur pour distribuer les ressources hardware.
+
+Cette méthode permet de réduire l’empreinte des applications sur l’infrastructure. Le conteneur regroupe tous les composants système nécessaires à l’exécution du code, sans pour autant peser aussi lourd d’un OS complet.
+
+De même, un conteneur est plus léger et plus simple qu’une machine virtuelle et peut donc démarrer et s’arrêter plus rapidement. Il est donc plus réactif, et adaptable aux besoins fluctuants liés au ” scaling ” d’une application.
+
+Dernier point fort : contrairement à un hyperviseur, un moteur de conteneur n’a pas besoin d’émuler un système d’exploitation complet. Le conteneur offre donc de meilleures performances qu’un déploiement sur machine virtuelle traditionnelle.
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
