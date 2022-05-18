@@ -16,12 +16,15 @@ Celles-ci permettent de séparer les applications entre elles sur un même syst�
 
 Contrairement à une machine virtuelle de plusieurs Go, un conteneur est plus simple, il peut donc s'arrêter et démarrer plus rapidement et délivre uniquement les ressources nécessaires à une application. En effet, le conteneur partage le kernel de son OS avec d’autres conteneurs. C’est une différence avec une machine virtuelle, utilisant un hyperviseur pour distribuer les ressources hardware.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+## Comment fonctionne DockerFile ? 
+
+Chaque conteneur Docker débute avec un ”Dockerfile“. Il s’agit d’un fichier texte rédigé dans une syntaxe compréhensible, comportant les instructions de création d’une image Docker.
+
+Un Dockerfile précise le système d’exploitation sur lequel sera basé le conteneur, et les langages, variables environnementales, emplacements de fichiers, ports réseaux et autres composants requis
+
+## Les images Docker
+
 
 - Bulleted
 - List
