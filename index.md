@@ -69,12 +69,6 @@ $ docker run -d -p 82:80 nginx // Créer un conteneur en mode détaché accessib
 $ docker stop|start <id> // Arrêter|Lancer un conteneur
 $ docker ps -a // Liste des conteneurs (-a affiche également les conteneurs arrêtés)
 $ docker ps -q // Liste des identifiants de conteneur
-$ docker stop $(docker ps -q)  // Cela arrête tous les conteneurs renvoyés par la sous-commande `docker ps -q`
-$ docker rm <id> // Supprimer un conteneur s il est arrêté
-$ docker rm -f <id> // Forcer la suppression d un conteneur même s il n est pas arrêté
-$ docker exec -it <id> bash // Ouvrir un terminal interactive (-it) dans le conteneur
-$ docker exec <id> ls // Exécute la commande ls sur le conteneur pour afficher ses fichiers
-$ docker cp <id>:<fichier> . // Copie le fichier <fichier> du conteneur dans notre système de fichiers <local>
 ```
 
 ## Qu'avons-nous produit dans cette SAE ? 
