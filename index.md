@@ -1,11 +1,10 @@
 ## Qu'est-ce que DockerFile ?
 
-Docker est une plateforme de conteneurs lancée en 2013 ayant largement contribué à la démocratisation de la conteneurisation. Elle permet de créer facilement des conteneurs et des applications basées sur les conteneurs. Il en existe d’autres, mais celle-ci est la plus utilisée. Elle est par ailleurs plus facile à déployer et à utiliser que ses concurrentes.
+Docker est une plateforme de conteneurs lancée en 2013. Il facilite la création de conteneurs et d'applications basées sur celles-ci. Il en existe d'autres, mais celui-ci est le plus utilisé. Il est également plus facile à déployer et à utiliser que la concurrence. 
 
-C’est une solution open source, sécurisée et économique. De nombreux individus et entreprises contribuent au développement de ce projet. Un large écosystème de produits, services et ressources sont développés par cette vaste communauté.
+C'est une solution open source, sécurisée et économique. De nombreuses personnes et entreprises ont contribué au développement de ce projet. Cette immense communauté a développé un immense écosystème de produits, services et ressources. 
 
-Initialement conçue pour Linux, Docker permet aussi d’exécuter des conteneurs sur Windows ou Mac grâce à une ” layer ” de virtualisation Linux entre l’OS Windows / macOS et l’environnement runtime Docker. Il est donc possible d’exécuter des conteneurs Windows natifs sur des environnements de conteneurs Windows ou Linux.
-
+Conçu à l'origine pour Linux, Docker permet également aux conteneurs de s'exécuter sur Windows ou Mac en raison de la "couche" de virtualisation Linux entre le système d'exploitation Windows/macOS et l'environnement d'exécution Docker. Par conséquent, il est possible d'exécuter des conteneurs Windows natifs dans un environnement de conteneur Windows ou Linux.
 
 ## Qu'est-ce qu'un conteneur ?
 
