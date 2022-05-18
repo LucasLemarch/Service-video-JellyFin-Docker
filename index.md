@@ -37,7 +37,7 @@ Un Dockerfile précise le système d’exploitation sur lequel sera basé le con
            margin-left: auto;
            margin-right: auto;
            width: 80%;"
-    src="./img/Image2.PNG" 
+    src="./img/Image2.png" 
     alt="Image" />
 
 ## Les images Docker
