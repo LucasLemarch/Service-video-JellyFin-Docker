@@ -6,13 +6,13 @@ Conçu à l'origine pour Linux, Docker permet également aux conteneurs de s'ex�
 
 ## Qu'est-ce qu'un conteneur ?
 
-<p style ="text-align:justify;"> Un conteneur est un environnement d’exécution léger, et d’une alternative aux méthodes de virtualisation traditionnelles basées sur les machines virtuelles. <br>
+Un conteneur est un environnement d’exécution léger, et d’une alternative aux méthodes de virtualisation traditionnelles basées sur les machines virtuelles. <br>
 
-<p style ="text-align:justify;"> Pour exécuter les applications, il est toutefois nécessaire d’exploiter des packages, des bibliothèques et divers composants logiciels. Pour exploiter ces ressources tout en isolant une application, on utilise depuis longtemps les machines virtuelles. <br>
+Pour exécuter les applications, il est toutefois nécessaire d’exploiter des packages, des bibliothèques et divers composants logiciels. Pour exploiter ces ressources tout en isolant une application, on utilise depuis longtemps les machines virtuelles. <br>
 
-<p style ="text-align:justify;"> Celles-ci permettent de séparer les applications entre elles sur un même système, et de réduire les conflits entre les composants logiciels et la compétition pour les ressources. Cependant, une alternative a vu le jour : les conteneurs. <br>
+Celles-ci permettent de séparer les applications entre elles sur un même système, et de réduire les conflits entre les composants logiciels et la compétition pour les ressources. Cependant, une alternative a vu le jour : les conteneurs. <br>
 
-<p style ="text-align:justify;"> Contrairement à une machine virtuelle de plusieurs Go, un conteneur est plus simple, il peut donc s'arrêter et démarrer plus rapidement et délivre uniquement les ressources nécessaires à une application. En effet, le conteneur partage le kernel de son OS avec d’autres conteneurs. C’est une différence avec une machine virtuelle, utilisant un hyperviseur pour distribuer les ressources hardware.
+Contrairement à une machine virtuelle de plusieurs Go, un conteneur est plus simple, il peut donc s'arrêter et démarrer plus rapidement et délivre uniquement les ressources nécessaires à une application. En effet, le conteneur partage le kernel de son OS avec d’autres conteneurs. C’est une différence avec une machine virtuelle, utilisant un hyperviseur pour distribuer les ressources hardware.
 
 <img 
     style="display: block; 
@@ -26,13 +26,13 @@ Conçu à l'origine pour Linux, Docker permet également aux conteneurs de s'ex�
 
 ## Comment fonctionne DockerFile ? 
 
-<p style ="text-align:justify;"> Chaque conteneur Docker débute avec un ”Dockerfile“. Il s’agit d’un fichier texte rédigé dans une syntaxe compréhensible, comportant les instructions de création d’une image Docker. <br>
+Chaque conteneur Docker débute avec un ”Dockerfile“. Il s’agit d’un fichier texte rédigé dans une syntaxe compréhensible, comportant les instructions de création d’une image Docker. <br>
 
-<p style ="text-align:justify;"> Un Dockerfile précise le système d’exploitation sur lequel sera basé le conteneur, et les langages, variables environnementales, emplacements de fichiers, ports réseaux et autres composants requis. <br>
+Un Dockerfile précise le système d’exploitation sur lequel sera basé le conteneur, et les langages, variables environnementales, emplacements de fichiers, ports réseaux et autres composants requis. <br>
 
-<p style ="text-align:justify;"> Pour importer d'un fichier DockerFile à un fichier DockerImage, il suffit de taper la ligne de code suivante : <br> </p>
+Pour importer d'un fichier DockerFile à un fichier DockerImage, il suffit de taper la ligne de code suivante : <br> </p>
 <code> $ docker build <img> </code> <br> <br>
-<p style ="text-align:justify;"> Cela va créer un conteneur à partir d une image. Si nous n avons pas l image localement, elle est téléchargé automatiquement 
+ Cela va créer un conteneur à partir d une image. Si nous n avons pas l image localement, elle est téléchargé automatiquement 
 
 <img 
     style="display: block; 
@@ -44,6 +44,6 @@ Conçu à l'origine pour Linux, Docker permet également aux conteneurs de s'ex�
 
 ## Les images Docker
 
-<p style ="text-align:justify;"> Une image Docker est un modèle en lecture seule, qui est utilisée pour créer des conteneurs Docker. Cette image est composée de plusieurs couches empaquetant toutes les installations/dépendances/bibliothèques/processus/code d'application qui sont necéssaires pour un environnement de conteneur pleinement opérationnel. </p>
+Une image Docker est un modèle en lecture seule, qui est utilisée pour créer des conteneurs Docker. Cette image est composée de plusieurs couches empaquetant toutes les installations/dépendances/bibliothèques/processus/code d'application qui sont necéssaires pour un environnement de conteneur pleinement opérationnel. </p>
 
 ## Quelques commandes utiles pour créer des fichiers
