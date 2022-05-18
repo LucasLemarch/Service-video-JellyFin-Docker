@@ -64,7 +64,7 @@
 ```shell
 $ docker info
 $ docker version
-$ docker run <image> //Créer un conteneur à partir d une image. Si nous n avons pas l image localement, elle 			téléchargé automatiquement
+$ docker run <image> //Créer un conteneur à partir d une image. Si nous n avons pas l image localement, elle télécharge automatiquement
 $ docker run -d -p 82:80 nginx // Créer un conteneur en mode détaché accessible depuis le port 82
 $ docker stop|start <id> // Arrêter|Lancer un conteneur
 $ docker ps -a // Liste des conteneurs (-a affiche également les conteneurs arrêtés)
@@ -77,6 +77,6 @@ $ docker exec <id> ls // Exécute la commande ls sur le conteneur pour afficher 
 $ docker cp <id>:<fichier> . // Copie le fichier <fichier> du conteneur dans notre système de fichiers <local>
 ```
 
-```
-dqdfqd
-```
+## Qu'avons-nous produit dans cette SAE ? 
+
+
