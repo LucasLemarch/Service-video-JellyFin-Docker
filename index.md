@@ -32,7 +32,7 @@
 <p style ="text-align:justify;"> Pour créer une image à partir d'un dockerfile, il suffit de taper la ligne de code suivante : </p>
 <code> $ docker build <'NomImage'> </code> <br>
 
-<p style ="text-align:justify;">  Cela va créer un conteneur à partir d'une image. Si nous n'avons pas l'image localement, elle est téléchargée automatiquement. </p>
+<p style ="text-align:justify;">  Cela va créer une image à partir d'un dockerfile. Si nous n'avons pas l'image localement, elle est téléchargée automatiquement. </p>
 
 <img 
     style="display: block; 
@@ -66,7 +66,7 @@
 
 ### La partie DockerFile
 
-<p style ="text-align:justify;"> Pour installer notre service de vidéo en ligne, nous avons dû utiliser <b>l'image du Debian officiel comme image parent</b> de notre fichier dockerfile car c'est une demande du professeur. Cela se traduit par cette ligne sur notre fichier : </p> 
+<p style ="text-align:justify;"> Pour installer notre service de vidéo en ligne, nous avons dû utiliser <b>l'image du Debian officiel comme image parent</b> de notre fichier dockerfile car c'est une contrainte qui nous était imposée. Cela se traduit par cette ligne sur notre fichier : </p> 
 
 <code> FROM debian:latest </code>
 
@@ -80,18 +80,28 @@
     src="./img/Commande1.png" 
     alt="Image" />
 
-<p style ="text-align:justify;"> Ces lignes de commandes nous permettent <b>l'installation de l'application Jellyfin mais aussi d'un paquet permettant de lire des extensions ".mp4"</b>. La dernière ligne permet de créer <b>un dossier data</b>. Celui-ci contiendra les données configurés de Jellyfin, comme par exemple les paramètres ou alors les sources vidéos que nous utiliserons. Par ailleurs, nous avons crée un autre répertoire appelé "films" au même repértoire parent que le data, dans lequel sera stocké nos volumes reliés au conteneur </p>
+<p style ="text-align:justify;"> Ces lignes de commandes nous permettent <b>l'installation de l'application Jellyfin mais aussi d'un paquet permettant de lire des fichiers ".mp4"</b>. La dernière ligne permet de créer <b>un dossier data</b>. Celui-ci contiendra les données configurés de Jellyfin, comme par exemple les paramètres ou alors les sources vidéos que nous utiliserons. </p>
+
+<img 
+    style="display: block; 
+           margin-left: auto;
+           margin-right: auto;
+           width: 80%;"
+    src="./img/Commande3.png" 
+    alt="Image" />
+
+<p style ="text-align:justify;"> Dans notre architecture nous avons aussi un dossier "films" qui est un volume relié avec le dossier data/films de notre conteneur permettant l'ajout de film en temps réel sans à avoir à reconstruire notre image </p>
 
 <p style ="text-align:justify;"> Afin de pouvoir lancer notre service réseau, nous avons dû passer par un port de la machine, la commande <code> EXPOSE 8096 </code> permet donc d'exposer le port <b>8096</b> de JellyFin. </p> 
 
 <p style = "text-align:justify;"> Par la suite, nous avons dû copier le script de démarrage nommé "start.sh" dans le conteneur grâce à la commande <code> COPY start.sh /root/ </code>. Cependant, il nous est aussi necéssaire de copier les données configurées de JellyFin dans le conteneur Docker grâce au répertoire "data" crée précédemment. </p> 
 
 <p style = "text-align:justify;"> Pour finaliser l'écriture de ce DockerFile, nous devions lancer le service Jellyfin au démarrage du conteneur à partir du script de démarrage appelé "start.sh". Cette action se traduit par deux lignes de commande, la première pour le rendre exécutable, et la seconde pour l'exécuter. </p>
-<code> RUN chmod u+x /root/start.sh </code> et <code> /root/start.sh </code>
+<code> RUN chmod +x /root/start.sh </code> et <code> /root/start.sh </code>
 
 ### La partie start.sh
 
-<p style ="text-align:justify;"> Le fichier start.sh nous sert comme dit ci-dessus comme un script de démarrage, sans ce fichier, nous ne pourrions pas lancer Jellyfin. Celui-ci est composé d'une seule ligne qui va se servir de notre dossier data ainsi que notre dossier films, mais aussi du dockerfile pour l'afficher sur une page internet. "share" va partager le tout, --datadir redirige le chemain vers le dossier data. </p>
+<p style ="text-align:justify;"> Ce script démarre jellyfin de manière à ce que l'application se serve des données contenus dans le dossier data que nous avons copié. </p>
 
 <img 
     style="display: block; 
@@ -101,4 +111,4 @@
     src="./img/Commande2.png" 
     alt="Image" />
 
-<p style="text-align:justify;"> Pour savoir comment lancer notre service de vidéo à la demande, nous vous proposerons un tutoriel. </p>
+<p style="text-align:justify;"> Pour savoir comment lancer notre service de vidéo à la demande, nous vous proposerons un tutoriel dans le fichier README.md de notre projet. </p>
