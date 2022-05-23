@@ -89,7 +89,7 @@
 
 ### La partie start.sh
 
-<p style ="text-align:justify;"> Le fichier start.sh nous sert comme dit ci-dessus comme un script de démarrage, sans ce fichier, nous ne pourrions pas lancer Jellyfin. Celui-ci est composé d'une seule ligne qui va se servir de notre dossier data ainsi que notre dossier films, mais aussi du dockerfile pour l'afficher sur une page internet. </p>
+<p style ="text-align:justify;"> Le fichier start.sh nous sert comme dit ci-dessus comme un script de démarrage, sans ce fichier, nous ne pourrions pas lancer Jellyfin. Celui-ci est composé d'une seule ligne qui va se servir de notre dossier data ainsi que notre dossier films, mais aussi du dockerfile pour l'afficher sur une page internet.</p>
 
 <img 
     style="display: block; 
@@ -98,5 +98,7 @@
            width: 80%;"
     src="./img/Commande2.png" 
     alt="Image" />
+
+### Conclusion 
 
 
