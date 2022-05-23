@@ -90,7 +90,7 @@
     src="./img/Commande3.PNG" 
     alt="Image" />
 
-<p style ="text-align:justify;"> Dans notre architecture nous avons aussi un dossier "films" qui est un volume relié avec le dossier data/films de notre conteneur permettant l'ajout de film en temps réel sans à avoir à reconstruire notre image </p>
+<p style ="text-align:justify;"> Dans notre architecture nous avons aussi un dossier "films" qui est un volume relié avec le dossier data/films de notre conteneur permettant l'ajout de film en temps réel sans à avoir à reconstruire notre image. </p>
 
 <p style ="text-align:justify;"> Afin de pouvoir lancer notre service réseau, nous avons dû passer par un port de la machine, la commande <code> EXPOSE 8096 </code> permet donc d'exposer le port <b>8096</b> de JellyFin. </p> 
 
