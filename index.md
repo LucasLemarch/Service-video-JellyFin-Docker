@@ -35,7 +35,7 @@
 <p style ="text-align:justify;"> Pour importer d'un fichier DockerFile à un fichier DockerImage, il suffit de taper la ligne de code suivante : </p>
 <code> $ docker build 'NomImage' </code> <br>
 
-<p style ="text-align:justify;">  Cela va créer un conteneur à partir d une image. Si nous n avons pas l image localement, elle est téléchargé automatiquement </p>
+<p style ="text-align:justify;">  Cela va créer un conteneur à partir d'une image. Si nous n avons pas l image localement, elle est téléchargé automatiquement </p>
 
 <img 
     style="display: block; 
@@ -47,7 +47,7 @@
 
 ## Les images Docker
 
-<p style ="text-align:justify;"> Une image Docker est un modèle en lecture seule, qui est utilisée pour créer des conteneurs Docker. Cette image est composée de plusieurs couches empaquetant toutes les installations/dépendances/bibliothèques/processus/code d'application qui sont necéssaires pour un environnement de conteneur pleinement opérationnel. Voici la commande necéssaire pour déployer une image vers un conteneur : </p>
+<p style ="text-align:justify;"> Une image Docker est un modèle en lecture seule, qui est utilisée pour créer des conteneurs Docker. Cette image est composée de plusieurs couches empaquetant toutes les installations/ dépendances /bibliothèques / processus / code d'application qui sont necéssaires pour un environnement de conteneur pleinement opérationnel. Voici la commande necéssaire pour déployer une image vers un conteneur : </p>
 
 <code> $ docker run 'NomImage' </code> <br> 
 
@@ -60,5 +60,16 @@
     alt="Image" />
 
 ## Qu'avons-nous produit dans cette SAE ? 
+
+### JellyFin - à expliquer -
+
+
+### Partie DockerFile - à expliquer -
+
+<p> Le but de cette SAE était d'installer un service réseau à l'aide de Docker et de Git Hub. Nous avons opté pour un service de vidéo en ligne via JellyFin car c'était le plus dur à mettre en place et que nous aimons la difficulté. Tout d'abord, nous avons commencé par utiliser l'image du Debian officiel car c'est une des demandes du professeur. Ensuite nous devons installé des services et des paquets afin de faire fonctionner le dockerfile. apt install -y ffpmg && \ sert et la commande au dessus permet de lire des extensions .mp4 mkdir .data permet de créer un dossier data qui contiendra les données configurés de Jellyfin. La commande EXPOSE 8096 permet d'exposer le port 8096 de JellyFin, (renseignement dockerfile). Après cela, il suffit de copier le script de démarrage dans le conteneur grâce à la commande COPY start.sh /root/. La commande en dessous va permettre d'éxecuter le tout. Nous continuons par copier les données configurée de JellyFin dans le conteneur Docker. La dernière commande permet de lancer dans un CMD le fichier start.sh qui est définit comme le service de JellyFin. </p>
+
+### Partie Start.sh - à expliquer -
+
+<p> Ce fichier sert à démarrer JellyFin </p>
 
 
