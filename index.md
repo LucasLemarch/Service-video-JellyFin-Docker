@@ -87,7 +87,7 @@
            margin-left: auto;
            margin-right: auto;
            width: 80%;"
-    src="./img/Commande3.png" 
+    src="./img/Commande3.PNG" 
     alt="Image" />
 
 <p style ="text-align:justify;"> Dans notre architecture nous avons aussi un dossier "films" qui est un volume relié avec le dossier data/films de notre conteneur permettant l'ajout de film en temps réel sans à avoir à reconstruire notre image </p>
