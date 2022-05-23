@@ -16,7 +16,7 @@ EXPOSE 8096
 
 # Copie du script de démarrage dans le conteneur
 COPY start.sh /root/
-RUN chmod +x /root/start.sh 
+RUN chmod u+x /root/start.sh 
 
 # Copie des données configuré de jellyfin dans le conteneur
 COPY ./data/ /data/
