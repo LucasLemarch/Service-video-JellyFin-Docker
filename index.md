@@ -101,9 +101,9 @@
     src="./img/Commande2.png" 
     alt="Image" />
 
-<p style="text-align:justify;"> Pour savoir comment lancer notre service de vidéo à la demande, nous vous proposerons un tutoriel dans le fichier README.md de notre projet. </p>
-
 ## L'architecture de notre projet
+
+<p style ="text-align:justify;"> Dans notre architecture nous avons aussi un dossier "films" qui est un volume relié avec le dossier data/films de notre conteneur permettant l'ajout de film en temps réel sans à avoir à reconstruire notre image. </p>
 
 <img 
     style="display: block; 
@@ -113,4 +113,5 @@
     src="./img/Commande3.PNG" 
     alt="Image" />
 
-<p style ="text-align:justify;"> Dans notre architecture nous avons aussi un dossier "films" qui est un volume relié avec le dossier data/films de notre conteneur permettant l'ajout de film en temps réel sans à avoir à reconstruire notre image. </p>
+<p style="text-align:justify;"> Pour savoir comment lancer notre service de vidéo à la demande, nous vous proposerons un tutoriel dans le fichier README.md de notre projet. </p>
+
