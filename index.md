@@ -1,4 +1,4 @@
-## Qu'est-ce que DockerFile ?
+## Qu'est-ce que Docker ?
 
 <p style ="text-align:justify;"> Docker est une <b>plateforme de conteneurs</b> lancée en 2013. C'est une solution open source, sécurisée et économique. Conçu à l'origine pour Linux, Docker permet également aux conteneurs de s'exécuter sur Windows ou MAC en raison de la "couche" de virtualisation Linux entre les deux systèmes d'exploitation et l'environnement d'exécution Docker. </p> 
 
@@ -27,9 +27,9 @@
 
 ## Comment fonctionne DockerFile pour Docker ? 
 
-<p style ="text-align:justify;"> Chaque conteneur Docker débute avec un <b>Dockerfile</b>. Il s’agit d’un fichier texte rédigé dans une syntaxe compréhensible, comportant les instructions de création d’une image Docker. Un Dockerfile précise le système d’exploitation sur lequel sera basé le conteneur, ainsi que des langages, variables environnementales et des emplacements de fichiers. </p>
+<p style ="text-align:justify;"> Chaque conteneur Docker débute avec un <b>Dockerfile</b>. Il s’agit d’un fichier rédigé dans une syntaxe compréhensible, comportant les instructions de création d’une image Docker. Un Dockerfile précise le système d’exploitation sur lequel sera basé le conteneur, ainsi que des langages, variables environnementales et des emplacements de fichiers. </p>
 
-<p style ="text-align:justify;"> Pour importer d'un fichier DockerFile à un fichier DockerImage, il suffit de taper la ligne de code suivante : </p>
+<p style ="text-align:justify;"> Pour créer une image à partir d'un dockerfile, il suffit de taper la ligne de code suivante : </p>
 <code> $ docker build <'NomImage'> </code> <br>
 
 <p style ="text-align:justify;">  Cela va créer un conteneur à partir d'une image. Si nous n'avons pas l'image localement, elle est téléchargée automatiquement. </p>
@@ -58,7 +58,7 @@
 
 ## Qu'avons-nous produit dans cette SAE ? 
 
-<p style ="text-align:justify;"> L'objectif de cette SAE était <b>d'installer un service réseau</b> à l'aide de Docker et du logiciel Git Hub. Nous avons opté pour un service de vidéo en ligne via JellyFin car c'était le résultat était le meilleur selon nous, mais aussi car c'était l'un des plus dur à réaliser.  </p>
+<p style ="text-align:justify;"> L'objectif de cette SAE était <b>d'installer un service réseau</b> à l'aide de Docker et Git Hub. Nous avons opté pour un service de vidéo en ligne via JellyFin car c'était le résultat était le meilleur selon nous, mais aussi car c'était l'un des plus dur à réaliser.  </p>
 
 ### Jellyfin, Qu'est-ce que c'est ?
 
@@ -66,7 +66,7 @@
 
 ### La partie DockerFile
 
-<p style ="text-align:justify;"> Pour installer notre service de vidéo en ligne, nous avons dû utiliser <b>l'image du Debian officiel comme image parent</b> de notre fichier dockerfile car c'est une demande obligatoire du professeur responsable de la SAE. Cela se traduit par cette ligne sur notre fichier : </p> 
+<p style ="text-align:justify;"> Pour installer notre service de vidéo en ligne, nous avons dû utiliser <b>l'image du Debian officiel comme image parent</b> de notre fichier dockerfile car c'est une demande du professeur. Cela se traduit par cette ligne sur notre fichier : </p> 
 
 <code> FROM debian:latest </code>
 
@@ -80,18 +80,18 @@
     src="./img/Commande1.png" 
     alt="Image" />
 
-<p style ="text-align:justify;"> Ces lignes de commandes nous permettent <b>l'installation de l'application Jellyfin mais aussi d'un paquet permettant de lire des extensions ".mp4"</b>. La dernière ligne permet de créer <b>un dossier data</b>. Celui-ci contiendra les données configurés de Jellyfin. Par ailleurs, nous avons crée un autre répertoire appelé "films" au même repértoire parent que le data, dans lequel sera stocké nos volumes reliés au conteneur </p>
+<p style ="text-align:justify;"> Ces lignes de commandes nous permettent <b>l'installation de l'application Jellyfin mais aussi d'un paquet permettant de lire des extensions ".mp4"</b>. La dernière ligne permet de créer <b>un dossier data</b>. Celui-ci contiendra les données configurés de Jellyfin, comme par exemple les paramètres ou alors les sources vidéos que nous utiliserons. Par ailleurs, nous avons crée un autre répertoire appelé "films" au même repértoire parent que le data, dans lequel sera stocké nos volumes reliés au conteneur </p>
 
 <p style ="text-align:justify;"> Afin de pouvoir lancer notre service réseau, nous avons dû passer par un port de la machine, la commande <code> EXPOSE 8096 </code> permet donc d'exposer le port <b>8096</b> de JellyFin. </p> 
 
 <p style = "text-align:justify;"> Par la suite, nous avons dû copier le script de démarrage nommé "start.sh" dans le conteneur grâce à la commande <code> COPY start.sh /root/ </code>. Cependant, il nous est aussi necéssaire de copier les données configurées de JellyFin dans le conteneur Docker grâce au répertoire "data" crée précédemment. </p> 
 
-<p style = "text-align:justify;"> Pour finaliser l'écriture de ce DockerFile, nous devions lancer le service Jellyfin au démarrage du conteneur à partir du script de démarrage appelé "start.sh". Cette action se traduit par deux lignes de commande, la première pour exécuter, et la seconde pour le transmettre dans un terminal "CMD" : </p>
-<code> RUN chmod +x /root/start.sh </code> et <code> /root/start.sh </code>
+<p style = "text-align:justify;"> Pour finaliser l'écriture de ce DockerFile, nous devions lancer le service Jellyfin au démarrage du conteneur à partir du script de démarrage appelé "start.sh". Cette action se traduit par deux lignes de commande, la première pour le rendre exécutable, et la seconde pour l'exécuter. </p>
+<code> RUN chmod u+x /root/start.sh </code> et <code> /root/start.sh </code>
 
 ### La partie start.sh
 
-<p style ="text-align:justify;"> Le fichier start.sh nous sert comme dit ci-dessus comme un script de démarrage, sans ce fichier, nous ne pourrions pas lancer Jellyfin. Celui-ci est composé d'une seule ligne qui va se servir de notre dossier data ainsi que notre dossier films, mais aussi du dockerfile pour l'afficher sur une page internet.</p>
+<p style ="text-align:justify;"> Le fichier start.sh nous sert comme dit ci-dessus comme un script de démarrage, sans ce fichier, nous ne pourrions pas lancer Jellyfin. Celui-ci est composé d'une seule ligne qui va se servir de notre dossier data ainsi que notre dossier films, mais aussi du dockerfile pour l'afficher sur une page internet. "share" va partager le tout, --datadir redirige le chemain vers le dossier data. </p>
 
 <img 
     style="display: block; 
