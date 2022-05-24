@@ -3,29 +3,31 @@
 ## Pré-requis
 
 <p style="text-align:justify">
-    Pour ce tutoriel, nous partirons du principe que vous possédez un GitHub fonctionnel ainsi que le logiciel Docker Deskop sur votre ordinateur.
+    Pour ce tutoriel, nous partirons du principe que vous possédez un GitHub fonctionnel ainsi que le logiciel Docker Deskop sur votre ordinateur. Si jamais ce n'etait pas le cas, nous vous conseillons les liens suivant pour les avoir : <br/>
+	<a href="https://juanluck.github.io/Introduction-GIT/">GitHub</a> 
+	<a href="https://docs.docker.com/get-docker/"         >Docker</a>
 </p>
 
 ## Etape 1 - Ouverture de Docker Desktop
 
 <p style="text-align:justify">
-    Pour commencer, ouvrir le logiciel <i>Docker Desktop</i> et le laisser en fond.
-    Nous n'en aurons pas directement besoin mais il sera utile pour la réalisation de certaines commandes docker...
+    Ouvrez le logiciel <i>Docker Desktop</i> et réduisez-le. Il est impératif qu'il tourne en arrière plan pour le bon fonctionnement de nos manipulations.
 </p>
 
 <img style="display: block;
             margin-left: auto;
             margin-right: auto;
             width: 80%;" 
-     src="./img/docker-desktop.png" alt="Docker Desktop" />
+     src="./images/docker-desktop.png" alt="Docker Desktop" />
 
 ## Etape 2 - Récupération des fichiers sur GitHub
 
 <p style="text-align:justify">
-    Pour récupérer les fichiers sur GitHub, il faudra dans un premier temps ouvrir le cmd dans lequel vous pouvez utiliser les commandes git, et placer vous dans le fichier où vous souhaitez cloner le GitHub. <br/> 
-    Tapez ensuite la commandes suivantes :<br/>
-    <i>git clone git@github.com:LucasLemarch/docker-sae203.git</i><br/>
-    Utiliser ensuite la commande _cd docker-sae203_ pour rentrer dans le fichier venant d'être créer.
+    Ouvrez un invité de commande fonctionnant avec Github et placez-vous dans le repertoire où vous souhaitez contenir les fichiers pour faire fonctionner Jellyfin.<br/> 
+</p>
+<p style="text-align:justify">
+    Tapez la commandes suivantes :<br/>
+    <code>git clone git@github.com:LucasLemarch/docker-sae203.git</code>
 </p>
 
 <img style="display: block;
@@ -33,6 +35,10 @@
             margin-right: auto;
             width: 80%;" 
      src="./img/git-clone.png" alt="Git Clone" />
+
+<p style="text-align:justify">
+	Utilisez la commande <code>cd docker-sae203</code> pour vous placer dans le dossier venant d'être importé.
+</p>
 
 ## Etape 3 - Création de l'image 
 
@@ -48,7 +54,7 @@
             margin-left: auto;
             margin-right: auto;
             width: 80%;" 
-     src="./img/docker-build.png" alt="Docker Build" />
+     src="./images/docker-build.png" alt="Docker Build" />
 
 ## Etape 4 - Lancement de l'image
 
@@ -63,7 +69,7 @@
             margin-left: auto;
             margin-right: auto;
             width: 80%;" 
-     src="./img/docker-run-ps.png" alt="Docker Run et Docker ps" />
+     src="./images/docker-run-ps.png" alt="Docker Run et Docker ps" />
 
 <p style="text-align:justify">
     Vous devriez normalement voir le nom de l'image ainsi que son statut etc...
@@ -81,7 +87,7 @@
             margin-left: auto;
             margin-right: auto;
             width: 80%;" 
-     src="./img/connection.png" alt="Connection" />
+     src="./images/connection.png" alt="Connection" />
 
 ## Etape 6 - Première connection et ajouts des films
 
@@ -94,7 +100,7 @@
             margin-left: auto;
             margin-right: auto;
             width: 80%;" 
-     src="./img/option.png" alt="Barres Horizontales" />
+     src="./images/option.png" alt="Barres Horizontales" />
 
 <p style="text-align:justify">
     Puis cliquez sur <i>Tableau de Bord</i>
@@ -104,7 +110,7 @@
             margin-left: auto;
             margin-right: auto;
             width: 80%;" 
-     src="./img/acces-tableau.png" alt="Acces Tableau de Bord" />
+     src="./images/acces-tableau.png" alt="Acces Tableau de Bord" />
 
 <p style="text-align:justify">
     Une fois dans le tableau de bord, il ne reste plus qu'à cliquer sur <i>Actualister toutes les médiathèques</i>
@@ -114,7 +120,7 @@
             margin-left: auto;
             margin-right: auto;
             width: 80%;" 
-     src="./img/tableau.png" alt="Actualisation" />
+     src="./images/tableau.png" alt="Actualisation" />
 
 <p style="text-align:justify">
     Les films sont maintenant disponibles si vous retournez sur l'accueil.
@@ -124,4 +130,4 @@
             margin-left: auto;
             margin-right: auto;
             width: 80%;" 
-     src="./img/films.png" alt="Films" />
+     src="./images/films.png" alt="Films" />
