@@ -80,11 +80,12 @@
     src="./img/Commande1.png" 
     alt="Image" />
 
-<p style ="text-align:justify;"> Ces lignes de commandes nous permettent <b>l'installation de l'application Jellyfin mais aussi d'un paquet permettant de lire des fichiers ".mp4"</b>. La dernière ligne permet de créer <b>un dossier data</b>. Celui-ci contiendra les données configurés de Jellyfin, comme par exemple les paramètres ou alors les sources vidéos que nous utiliserons. </p>
+<p style ="text-align:justify;"> Ces lignes de commandes nous permettent <b>l'installation de l'application Jellyfin mais aussi d'un paquet permettant de lire des fichiers ".mp4"</b> ainsi qu'un paquet permettant de décompresser le dossier ".zip". </p>
 
 <p style ="text-align:justify;"> Afin de pouvoir lancer notre service réseau, nous avons dû passer par un port de la machine, la commande <code> EXPOSE 8096 </code> permet donc d'exposer le port <b>8096</b> de JellyFin. </p> 
 
-<p style = "text-align:justify;"> Par la suite, nous avons dû copier le script de démarrage nommé "start.sh" dans le conteneur grâce à la commande <code> COPY start.sh /root/ </code>. Cependant, il nous est aussi necéssaire de copier les données configurées de JellyFin dans le conteneur Docker grâce au répertoire "data" crée précédemment. </p> 
+<p style = "text-align:justify;"> Par la suite, nous avons dû copier les données zippées grâce à la commande <code> COPY donnees.zip .
+</code> pour ensuite les décompresser dans notre conteneur <code> RUN unzip donnees.zip -d . </code>. Ce fichier contient toutes les configurations de notre service de vidéo à la demande mais aussi le script de démarrage qui nous servira un peu plus tard. </p> 
 
 <p style = "text-align:justify;"> Pour finaliser l'écriture de ce DockerFile, nous devions lancer le service Jellyfin au démarrage du conteneur à partir du script de démarrage appelé "start.sh". Cette action se traduit par deux lignes de commande, la première pour le rendre exécutable, et la seconde pour l'exécuter. </p>
 <code> RUN chmod +x /root/start.sh </code> et <code> /root/start.sh </code>
