@@ -9,17 +9,15 @@ RUN apt update && \
 	apt update && \ 
 	apt install -y jellyfin && \
 	apt install -y ffmpeg && \
-	mkdir /data
+	apt install -y unzip
 
 # Exposer le port 8096 de jellyfin
 EXPOSE 8096
 
-# Copie du script de démarrage dans le conteneur
-COPY start.sh /root/
-RUN chmod +x /root/start.sh 
-
-# Copie des données configuré de jellyfin dans le conteneur
-COPY ./data/ /data/
+# Copie et insertion des données dans le conteneur
+COPY donnees.zip .
+RUN unzip donnees.zip -d .
 
 # Lancer le service jellyfin au démarrage du conteneur à partir du script
+RUN chmod +x /root/start.sh 
 CMD /root/start.sh
