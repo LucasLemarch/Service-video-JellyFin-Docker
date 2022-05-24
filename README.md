@@ -24,7 +24,7 @@
 <p style="text-align:justify">
     Pour récupérer les fichiers sur GitHub, il faudra dans un premier temps ouvrir le cmd dans lequel vous pouvez utiliser les commandes git, et placer vous dans le fichier où vous souhaitez cloner le GitHub. <br/> 
     Tapez ensuite la commandes suivantes :<br/>
-    _git clone git@github.com:LucasLemarch/docker-sae203.git_<br/>
+    <i>git clone git@github.com:LucasLemarch/docker-sae203.git</i><br/>
     Utiliser ensuite la commande _cd docker-sae203_ pour rentrer dans le fichier venant d'être créer.
 </p>
 
@@ -38,8 +38,8 @@
 
 <p style="text-align:justify">
     Pour créer l'image, toujours en étant de le dossier créer précedement (docker-sae203) tapez la commande :<br/>
-    _docker build --no-cache -t [color=#FF0000]jellyfin-docker_sae .[/color]_<br/>
-    Où _[color=#FF0000]jellefin-docker_sae[/color]_ est le nom de l'image.<br/>
+    <i>docker build --no-cache -t <span style="color: #FF0000">jellyfin-docker_sae .</span></i><br/>
+    Où <i><span style="color: #FF0000">jellefin-docker_sae</span></i> est le nom de l'image.<br/>
     Ne pas oublier le "." à la fin de la commande.<br/>
     La création de l'image peut durer plusieurs minutes.
 </p>
@@ -54,9 +54,9 @@
 
 <p style="text-align:justify">
     Une fois la création terminer, il faut maintenant lancer l'image, pour se faire, utiliser la commande :<br/>
-    _docker run -d -v [color=#207125]C:\iut\TP...[/color]:/data/films -p 8080:8096 [color=#FF0000]jellyfin-docker_sae[/color]_<br/>
+    <i>docker run -d -v <span style="color: #207145">C:\iut\TP...</span>:/data/films -p 8080:8096 <span style="color: #FF0000">jellyfin-docker_sae</span></i><br/>
     Après cela, pour vérifier que l'image est correctement lancé, utiliser la commande :<br/>
-    _docker ps_
+    <i>docker ps</i>
 </p>
 
 <img style="display: block;
@@ -73,8 +73,8 @@
 
 <p style="text-align:justify">
     Une fois que l'image est correctement lancé, lancer un navigateur est entrez l'url :<br/>
-    _localhost:8080_<br/>
-    Se connecter avec les identifiants _admin_;_admin_
+    <i>localhost:8080</i><br/>
+    Se connecter avec les identifiants <i>admin</i>;<i>admin</i>
 </p>
 
 <img style="display: block;
