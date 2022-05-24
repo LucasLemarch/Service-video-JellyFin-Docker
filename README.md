@@ -45,7 +45,7 @@
     Créez une image docker avec la commande :<br/>
     <code>docker build --no-cache -t [nom-image] .</code> (remplacez [nom-image] par le nom que vous voulez donner a votre image)
 </p>
-<p><span style="color: #FF0000"> /!\ Ne pas oublier le "." à la fin de la commande. </span></p>
+<p><span style="color: #FF0000"> /!\ Ne pas oublier le "." à la fin de la commande </span></p>
 <p>Nota : La création de l'image peut durer plusieurs minutes.</p>
 
 <img style="display: block;
@@ -70,13 +70,13 @@
             width: 80%;" 
      src="./images/docker-run-ps.png" alt="Docker Run et Docker ps" />
 
-## Etape 5 - Le site
+## Etape 5 - Connexion à Jellyfin
 
 <p style="text-align:justify">
-    Une fois que l'image est correctement lancé, lancer un navigateur est entrez l'url :<br/>
-    <i>localhost:8080</i><br/>
-    Se connecter avec les identifiants <i>admin</i>;<i>admin</i>
+    Maintenant que notre conteneur est en route, lancez votre navigateur internet et écrivez-y ceci : <br/>
+    <code>localhost:8080</code>
 </p>
+<p>Connectez-vous avec l'identifiant : <i>admin</i> et le mot de passe : <i>admin</i> .
 
 <img style="display: block;
             margin-left: auto;
@@ -84,11 +84,14 @@
             width: 80%;" 
      src="./images/connection.png" alt="Connection" />
 
-## Etape 6 - Première connection et ajouts des films
+## Etape 6 - Utilisation de Jellyfin
 
 <p style="text-align:justify">
-    Une fois connecté, il ne reste plus qu'à ajouter les films, pour se faire :<br/>
-    Cliquez sur les trois barres horizontales :
+    Maintenant que vous êtes connecté, si vous-souhaitez ajouter des films il suffit de les placer dans le dossier "films" du repertoire que nous avons importé lors de l'étape 2.
+</p>
+
+<p style="text-align:justify">
+	Pour actualiser les films, cliquez sur les trois barres présentent en haut à gauche de votre écran.
 </p>
 
 <img style="display: block;
@@ -98,7 +101,7 @@
      src="./images/option.png" alt="Barres Horizontales" />
 
 <p style="text-align:justify">
-    Puis cliquez sur <i>Tableau de Bord</i>
+    Puis cliquez sur <i>Tableau de Bord</i>.
 </p>
 
 <img style="display: block;
@@ -108,7 +111,7 @@
      src="./images/acces-tableau.png" alt="Acces Tableau de Bord" />
 
 <p style="text-align:justify">
-    Une fois dans le tableau de bord, il ne reste plus qu'à cliquer sur <i>Actualister toutes les médiathèques</i>
+    Pour finir, cliquez sur <i>Actualister toutes les médiathèques</i>.
 </p>
 
 <img style="display: block;
@@ -118,7 +121,7 @@
      src="./images/tableau.png" alt="Actualisation" />
 
 <p style="text-align:justify">
-    Les films sont maintenant disponibles si vous retournez sur l'accueil.
+    Vous pouvez maintenant revenir à l'accueil.
 </p>
 
 <img style="display: block;
@@ -126,3 +129,7 @@
             margin-right: auto;
             width: 80%;" 
      src="./images/films.png" alt="Films" />
+
+<p style="text-align:justify">
+	Félicitation vous savez désormais comment installer et utiliser Jellyfin !!!
+<p>
