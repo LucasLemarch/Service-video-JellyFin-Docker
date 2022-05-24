@@ -9,7 +9,7 @@
 ## Etape 1 - Ouverture de Docker Desktop
 
 <p style="text-align:justify">
-    Pour commencer, ouvrir le logiciel _Docker Desktop_ et le laisser en fond.
+    Pour commencer, ouvrir le logiciel <i>Docker Desktop</i> et le laisser en fond.
     Nous n'en aurons pas directement besoin mais il sera utile pour la réalisation de certaines commandes docker...
 </p>
 
@@ -86,5 +86,42 @@
 ## Etape 6 - Première connection et ajouts des films
 
 <p style="text-align:justify">
-    bla bla bla bla bla bla bla
+    Une fois connecté, il ne reste plus qu'à ajouter les films, pour se faire :<br/>
+    Cliquez sur les trois barres horizontales :
 </p>
+
+<img style="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;" 
+     src="./img/option.png" alt="Barres Horizontales" />
+
+<p style="text-align:justify">
+    Puis cliquez sur <i>Tableau de Bord</i>
+</p>
+
+<img style="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;" 
+     src="./img/acces-tableau.png" alt="Acces Tableau de Bord" />
+
+<p style="text-align:justify">
+    Une fois dans le tableau de bord, il ne reste plus qu'à cliquer sur <i>Actualister toutes les médiathèques</i>
+</p>
+
+<img style="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;" 
+     src="./img/tableau.png" alt="Actualisation" />
+
+<p style="text-align:justify">
+    Les films sont maintenant disponibles si vous retournez sur l'accueil.
+</p>
+
+<img style="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;" 
+     src="./img/films.png" alt="Films" />
