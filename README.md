@@ -57,7 +57,7 @@
 ## Etape 4 - Création du conteneur
 
 <p style="text-align:justify">
-    Une fois l'étape suivante terminé, créez et lancez un conteneur et utilisant la commande :<br/>
+    Une fois l'étape suivante terminée, créez et lancez un conteneur et utilisant la commande :<br/>
     <code>docker run -d -v [chemin-absolu-dossier]\films:/data/films -p 8080:8096 [nom-image]</code>
 </p>
 <p style="text-align:justify">
@@ -87,11 +87,11 @@
 ## Etape 6 - Utilisation de Jellyfin
 
 <p style="text-align:justify">
-    Maintenant que vous êtes connecté, si vous-souhaitez ajouter des films il suffit de les placer dans le dossier "films" du repertoire que nous avons importé lors de l'étape 2.
+    Maintenant que vous êtes connecté, si vous-souhaitez ajouter des films il suffit de les placer dans le dossier "films" du répertoire que nous avons importé lors de l'étape 2.
 </p>
 
 <p style="text-align:justify">
-	Pour actualiser les films, cliquez sur les trois barres présentent en haut à gauche de votre écran.
+	Pour actualiser les films, cliquez sur les trois barres présentes en haut à gauche de votre écran.
 </p>
 
 <img style="display: block;
