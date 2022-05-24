@@ -3,9 +3,8 @@
 ## Pré-requis
 
 <p style="text-align:justify">
-    Pour ce tutoriel, nous partirons du principe que vous possédez un GitHub fonctionnel ainsi que le logiciel Docker Deskop sur votre ordinateur. Si jamais ce n'etait pas le cas, nous vous conseillons les liens suivant pour les avoir : <br/>
-	<a href="https://juanluck.github.io/Introduction-GIT/">GitHub</a> 
-	<a href="https://docs.docker.com/get-docker/"         >Docker</a>
+    Pour ce tutoriel, nous partirons du principe que vous possédez un GitHub fonctionnel ainsi que le logiciel Docker Deskop sur votre ordinateur. Si jamais ce n'etait pas le cas, nous vous conseillons les liens suivant pour les avoir : 
+	<a href="https://juanluck.github.io/Introduction-GIT/">GitHub</a> / <a href="https://docs.docker.com/get-docker/">Docker</a>
 </p>
 
 ## Etape 1 - Ouverture de Docker Desktop
@@ -26,7 +25,7 @@
     Ouvrez un invité de commande fonctionnant avec Github et placez-vous dans le repertoire où vous souhaitez contenir les fichiers pour faire fonctionner Jellyfin.<br/> 
 </p>
 <p style="text-align:justify">
-    Tapez la commandes suivantes :<br/>
+    Tapez la commandes suivante :<br/>
     <code>git clone git@github.com:LucasLemarch/docker-sae203.git</code>
 </p>
 
@@ -34,21 +33,20 @@
             margin-left: auto;
             margin-right: auto;
             width: 80%;" 
-     src="./img/git-clone.png" alt="Git Clone" />
+     src="./images/git-clone.png" alt="Git Clone" />
 
 <p style="text-align:justify">
-	Utilisez la commande <code>cd docker-sae203</code> pour vous placer dans le dossier venant d'être importé.
+	Utilisez la commande <code>cd docker-sae203</code> pour vous placer dans le dossier venant d'être récupéré.
 </p>
 
 ## Etape 3 - Création de l'image 
 
 <p style="text-align:justify">
-    Pour créer l'image, toujours en étant de le dossier créer précedement (docker-sae203) tapez la commande :<br/>
-    <i>docker build --no-cache -t <span style="color: #FF0000">jellyfin-docker_sae .</span></i><br/>
-    Où <i><span style="color: #FF0000">jellefin-docker_sae</span></i> est le nom de l'image.<br/>
-    Ne pas oublier le "." à la fin de la commande.<br/>
-    La création de l'image peut durer plusieurs minutes.
+    Créez une image docker avec la commande :<br/>
+    <code>docker build --no-cache -t [nom-image] .</code> (remplacez [nom-image] par le nom que vous voulez donner a votre image)
 </p>
+<p><span style="color: #FF0000"> /!\ Ne pas oublier le "." à la fin de la commande. </span></p>
+<p>Nota : La création de l'image peut durer plusieurs minutes.</p>
 
 <img style="display: block;
             margin-left: auto;
