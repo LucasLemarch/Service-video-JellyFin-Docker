@@ -54,13 +54,14 @@
             width: 80%;" 
      src="./images/docker-build.png" alt="Docker Build" />
 
-## Etape 4 - Lancement de l'image
+## Etape 4 - Création du conteneur
 
 <p style="text-align:justify">
-    Une fois la création terminer, il faut maintenant lancer l'image, pour se faire, utiliser la commande :<br/>
-    <i>docker run -d -v <span style="color: #207145">C:\iut\TP...</span>:/data/films -p 8080:8096 <span style="color: #FF0000">jellyfin-docker_sae</span></i><br/>
-    Après cela, pour vérifier que l'image est correctement lancé, utiliser la commande :<br/>
-    <i>docker ps</i>
+    Une fois l'étape suivante terminé, créez et lancez un conteneur et utilisant la commande :<br/>
+    <code>docker run -d -v [chemin-absolu-dossier]\films:/data/films -p 8080:8096 [nom-image]</code>
+</p>
+<p style="text-align:justify">
+	Nota : Pour savoir quoi mettre à la place de [chemin-absolu-dossier], il suffit de regarder à gauche de où vous écrivez dans votre invité de commande. (exemple : C:\dossier1\dossier2)
 </p>
 
 <img style="display: block;
@@ -68,10 +69,6 @@
             margin-right: auto;
             width: 80%;" 
      src="./images/docker-run-ps.png" alt="Docker Run et Docker ps" />
-
-<p style="text-align:justify">
-    Vous devriez normalement voir le nom de l'image ainsi que son statut etc...
-</p>
 
 ## Etape 5 - Le site
 
